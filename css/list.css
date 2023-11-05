@@ -5,6 +5,20 @@
   border: 1px solid #666;
 }
 
+.name {
+  font-weight: 600;
+  font-size: 14px;
+  font-family: var(--title-font-family);
+  position: relative;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 14px;
+  font-family: var(--title-font-family);
+  position: relative;
+}
+
 .ul-vertical {
     list-style: none;
     padding: 8px;
