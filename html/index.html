@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/customSytles.css">
+    <link rel="stylesheet" href="/css/menuStyle.css">
+    <link rel="stylesheet" href="/css/scrollbar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Maitree:wght@300&family=Montserrat:wght@100;200;300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Lluis Vinent Portfolio</title>
+</head>
+<body>
+    <!--This is the initial message-->
+    <div class="preloader">
+        <h1>
+            <span class="nameTxt glitch" data-text="Lluís Vinent">Lluís Vinent</span> 
+            <span class="portfolioTxt">Portfolio</span>
+        </h1>
+    </div>
+    <!--This is the rectangle that contains the content-->
+    <div class="container">
+        <!--This is the custom shader on the background-->
+        <iframe id="iframe" frameborder="0" src="https://www.shadertoy.com/embed/DsyfWd?gui=false&t=10&paused=false&muted=true"></iframe>
+        <!--This is a tint on top of the sahder-->
+        <div class="tint"></div>
+        <!--The container is divided into respnsive columns-->
+        <div class="row">
+            <!--Left column. It contains the header and menu-->
+            <div class="column" style="margin-left: 20px; margin-top: 10px;">
+                <!--Header-->
+                <h1 class="title">Lluís Vinent</h1>
+                <h2 class="subtitle">Computer Engineer, UI/UX Designer & Developer</h2>
+                <!--Menu-->
+                <div class="button-group">
+                    <div class="button" data-content="about.html">
+                        <div class="line"></div>
+                        <span class="button-text">About</span>
+                    </div>
+                    <div class="button" data-content="projects.html">
+                        <div class="line"></div>
+                        <span class="button-text">Projects</span>
+                    </div>
+                    <div class="button" data-content="education.html">
+                        <div class="line"></div>
+                        <span class="button-text">Education</span>
+                    </div>
+                    <div class="button" data-content="contact.html">
+                        <div class="line"></div>
+                        <span class="button-text">Contact</span>
+                    </div>
+                </div>
+            </div>
+                <!--Right column. It contains the content of each section-->
+            <div class="column mainContent">
+                <div id="content-container">
+                    <!--CONTENT WILL BE LOADED HERE-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Import my scripts-->
+    <script src="/js/splashscreen.js"></script>
+    <script src="/js/menuBehavior.js"></script>
+    
+</body>
+</html>

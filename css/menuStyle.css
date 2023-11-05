@@ -1,0 +1,61 @@
+.button-group {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 25px;
+    filter: drop-shadow(0 1px 68px) blur(0.4px);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 5px;
+    width: fit-content; 
+    transition: all var(--transition-time); /* Add transition for smooth animation */
+}
+
+.line {
+    width: 20px;
+    height: 1px;
+    background-color: var(--secondary-text-color); /* Default color for non-selected buttons */
+    transition: width var(--transition-time), background-color var(--transition-time);
+}
+
+.button-text {
+    margin-left: 10px;
+    color: gray; /* Default color for non-selected buttons */  
+    font-weight: 300;
+    font-family: var(--title-font-family);
+    transition: color 0.5s, font-weight var(--transition-time);
+}
+
+.button.selected .line {
+    width: 50px; /* Width for selected button */
+    background-color: var(--primary-text-color); /* Color for selected button */
+}
+
+.button.selected .button-text {
+    font-weight: 500;
+    font-family: var(--title-font-family);
+    color: var(--primary-text-color); /* Color for selected button text */
+}
+
+.button:hover .line {
+    width: 50px;
+    background-color: var(--primary-text-color);
+}
+
+.button:hover .button-text {
+    color: var(--primary-text-color);
+    font-weight: 500; 
+}
+
+#content-container {
+    transition: opacity var(--transition-time) ease;
+}
+
+.fade-out {
+    opacity: 0 !important;
+}
