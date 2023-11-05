@@ -80,6 +80,9 @@ When the window is narrow (such as on mobile devices) the content will be placed
 
 [NextJS webpage](https://nextjs.org/)
 
+### W3.css framework
+
+I have used [W3.css](https://www.w3schools.com/w3css/default.asp) to apply some of its styles. It has been used in very few cases.
 
 ### Figma Design
 
