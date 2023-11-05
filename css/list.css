@@ -1,11 +1,19 @@
+.scrollView {
+  margin-top: 20px;
+  height: 550px;
+  overflow: auto;
+  border: 1px solid #666;
+}
+
 .ul-vertical {
     list-style: none;
-    margin: 0;
     padding: 8px;
     background-color: transparent;
-    display: inline-block;
-    filter: drop-shadow(0, 0, 0);
     max-width: 650px;
+    overflow-x: auto; 
+    height: fit-content;
+    width: fit-content;
+    filter: blur(0.4px);
 }
 
 .ul-vertical li {
@@ -14,8 +22,9 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    border: 1px solid #666;
+
     min-height: 225px;
+    max-width: 650px;
 }
 
 .ul-vertical li+li {
@@ -31,7 +40,6 @@
   transition: opacity 0.6s ease;
   opacity: 0;
   object-fit: cover;
-  
 }
 
 .image {
@@ -47,4 +55,17 @@
 
 li:hover .gif{
     opacity: 1;
+}
+
+
+@media (max-width: 800px) {
+  
+  .ul-vertical {
+    overflow: hidden;
+    height: fit-content;
+    margin-top: 5px;
+  }
+  .scrollView{
+    height: 100%;
+  }
 }

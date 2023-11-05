@@ -1,7 +1,7 @@
 
 .vertical-line {
     border-left: 2px solid #999999;
-    height: 80px;
+    height: 100%;
     flex-wrap: wrap;
 }
 
@@ -31,15 +31,13 @@
     width: 15px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
 }
 
 .timeline-container{
-    width: 850px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-bottom: 20px;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    filter: drop-shadow(0 1px 60px rgba(255,255,255,0.8)) blur(0.4px);
 }
 
 .circle {
@@ -53,9 +51,9 @@
     margin: auto 0;
 }
 
+
 @media (max-width: 800px) {
     .timeline-container{
-        position: relative;
-        width: 600px;
+        filter: drop-shadow(0 0px 0px) blur(0.4px);
     }
 }

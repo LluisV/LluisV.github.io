@@ -1,9 +1,5 @@
 .button-group {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-    margin-left: 25px;
+    position: relative;
     filter: drop-shadow(0 1px 68px) blur(0.4px);
 }
 
